@@ -19,10 +19,22 @@ function MemeGenerator() {
   };
 
   return (
-    <div className="meme-generator">
+    <div
+      className="meme-generator"
+      style={{
+        textAlign: 'center',
+        margin: '0 auto',
+        maxWidth: '600px',
+      }}
+    >
       <h1>Meme Generator</h1>
 
-      <div className="input">
+      <div
+        className="input"
+        style={{
+          margin: '15px 0',
+        }}
+      >
         <label htmlFor="top-text">Top text</label>
         <input
           id="top-text"
@@ -32,7 +44,12 @@ function MemeGenerator() {
         />
       </div>
 
-      <div className="input">
+      <div
+        className="input"
+        style={{
+          margin: '15px 0',
+        }}
+      >
         <label htmlFor="bottom-text">Top text</label>
         <input
           id="bottom-text"
@@ -42,7 +59,17 @@ function MemeGenerator() {
         />
       </div>
 
-      <div className="meme-preview">
+      <div
+        className="meme-preview"
+        style={{
+          margin: '30px 0',
+          padding: '15px',
+          backgroundColor: '#ffffff',
+          border: '2px solid #ddd',
+          borderRadius: '10px',
+          boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
+        }}
+      >
         <h2>Meme preview</h2>
         <img
           src={generateMemeUrl()}
